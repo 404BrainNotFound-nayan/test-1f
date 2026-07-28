@@ -30,7 +30,6 @@ DECLARE @RunDate DATE = CAST(GETDATE() AS DATE);
     ) AS M (OrgID, ToEmail, CCEmail)
 )
 
-/* ---------------- Part 1 : Booking ---------------- */
 SELECT DISTINCT
     BookingFile.MarketProfileID                         as [Market]
 	,BookingFile.SystemReference                       AS [Trip ID],
